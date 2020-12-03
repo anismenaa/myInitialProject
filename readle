@@ -1,0 +1,24 @@
+
+    // les valider
+    // confirmation password
+    // verifier l'existance du compte email
+    // hash the password 
+    // save it 
+
+
+  {
+    "familyName": "aaaaaaaa",
+    "surName": "aaaaaaaaaaaa", 
+    "birthday": "01/01/2020",
+    "nationality": "zaaaaa",
+    "password": "aaaaaaaaaa",
+    "pwdConfirmation":"aaaaaaaaaa",
+    "instagramLink":"aaaaaaaaaaaaaaaaaaaa",
+    "DriveLink": "aaaaaaaaaaaaaaaaaa"
+}
+
+
+{
+    "email":"a.menaa@esi-sba.dz",
+    "fullName":"anis menaa"
+}
