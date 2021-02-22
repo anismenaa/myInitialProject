@@ -16,35 +16,19 @@ const VerificationSchema = Joi.object({
 
 // for the inscription 2
 const inscription2Schema = Joi.object({
-    familyName: Joi.string()
-        .min(4)
-        .max(255)
-        .required(),
-
-    surName: Joi.string()
-        .min(4)
-        .max(255)
-        .required(),
-
-    birthday: Joi.date()
-        .required(),
-
-    nationality: Joi.string()
-        .required(),
-
-    password: Joi.string()
-        .min(6)
-        .max(15)
-        .required(),
-
-    instagramLink: Joi.string()
-        .required(),
-    DriveLink: Joi.string()
-        .required(),
+    username : Joi.string().required(),
+    birthday : Joi.date().required(),
+    nationality : Joi.string().required(),
+    password: Joi.string().required(),
+    passwordConfirmation: Joi.string().required(),
+    instagramLink : Joi.string().required(),
+    driveLink : Joi.string().required()
 })
 
-
-
+const loginSchema = Joi.object({
+    email: Joi.string().email().required(),
+    password: Joi.string().required()
+});
 
 exports.verifyInfo = (data)=>{
     const {error}=VerificationSchema.validate(data);
@@ -53,5 +37,10 @@ exports.verifyInfo = (data)=>{
 
 exports.validateInscription2 = (data)=>{
     const {error}=inscription2Schema.validate(data);
+    return error;
+}
+
+exports.validateLogins = (data)=>{
+    const {error} = loginSchema.validate(data);
     return error;
 }

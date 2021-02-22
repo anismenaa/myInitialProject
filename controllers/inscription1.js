@@ -7,9 +7,14 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
+exports.home = (req,res)=>{
+    res.render('../views/home');
+}
 
 exports.postGuest=async(req,res)=>{
     // recuperer l'email et le nom complet et le verifier
+    console.log(req.body)
+    console.log(process.env.SENDER_EMAIL)
     const notValide = validation.verifyInfo(req.body);
     if(notValide) return res.status(400).send(notValide.details[0].message);
     //on lui envoie un email de redirection vers apply section

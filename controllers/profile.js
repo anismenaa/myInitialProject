@@ -1,15 +1,12 @@
 const User = require('../models/user');
 
 
-
 exports.getPorfile=(req,res)=>{
    // we get the id
    const idUser = req.user.id;
    User.findOne({_id : idUser})
     .then((dataUser)=>{
-        res.status(200).send({
-            user: dataUser 
-        })
+        res.status(200).render('../views/profileEmp');
     })
     .catch((err)=>{
         res.status(400).send({

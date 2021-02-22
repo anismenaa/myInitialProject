@@ -1,0 +1,99 @@
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    float: left;
+    text-align: center;
+}
+
+.footer-item.footer-logo{
+    width: 15%;
+}
+.footer-item.footer-logo p{
+    margin-top:45%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.footer-item.footer-note{
+    width: 25%;
+    
+}
+.footer-item.footer-note h6{
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    width: 20%;
+    margin-left: 38%;
+    margin-top: 15%
+}
+
+.footer-item.footer-rights{
+    width: 30%;
+    position: relative;
+}
+.footer-item.footer-rights p{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    
+}
+.footer-item.footer-contact{
+    width: 40%;
+}
+.footer-item.footer-contact h6{
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    width: 20%;
+    margin-left: 38%;
+    margin-top: 8%
+}
+
+.login-section img{
+    border-radius: 50px; 
+    display: block;
+    position: relative;
+}
+
+input{
+    display: block;
+    margin-top: 20px;
+    
+}
+.login-inputs{
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 36%;
+}
+
+
+
+.login-inputs input[type="submit"]{
+    display: block;
+    margin:0 auto;
+    margin-top: 40px;
+    width: 50%;
+    color: #ffffff;
+    background-color: #72133C;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+.login-inputs input[type="email"], input[type="password"]{
+
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
